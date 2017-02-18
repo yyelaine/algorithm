@@ -1,17 +1,18 @@
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * struct ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
  */
-public class Solution {
+class Solution {
+public:
     /**
      * @param head a ListNode
      * @return a ListNode
      */
-    public ListNode swapPairs(ListNode head) {
+    ListNode* swapPairs(ListNode* head) {
         // Write your code here
          if(head==NULL) return head;
         ListNode* p = head;
@@ -23,4 +24,4 @@ public class Solution {
         }
         return head;
     }
-}
+};
